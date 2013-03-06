@@ -1,0 +1,209 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<html>
+<head>
+    <title>paste on my city</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/following.css" rel="stylesheet" media="screen"/>
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script>
+
+        $(function(){
+            $( '#test' ).masonry({
+                // options
+                itemSelector : '.column',
+                columnWidth : 244
+            });
+        });
+
+    </script>
+</head>
+<body>
+<div class="head-wrapper">
+<div class="container">
+
+    <div class="top-header clearfix">
+
+        <form class="navbar-search pull-left">
+            <div class="input-append">
+                <input type="text" class="search-query" placeholder="search">
+                <button type="submit" class="btn">Search</button>
+            </div>
+        </form>
+
+        <div class="logo">
+
+        </div>
+        <ul class="nav nav-pills pull-right">
+            <li class="active">
+                <a href="#">Inbox</a>
+            </li>
+            <li><a href="#createPaste" data-toggle="modal">Create Paste</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle"
+                   data-toggle="dropdown"
+                   href="#"><img class="user" src="img/user.jpg" />Arun <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Find Friends</a></li>
+                    <li><a href="#">Invite Friends</a></li>
+                    <li><a href="#">Following</a></li>
+                    <li><a href="#">Followers</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sec-nav clearfix">
+        <div class="pull-left sec-nav-category">
+            <div class="sec-nav-label pull-left">Categories</div>
+
+            <select>
+                <option>Cars</option>
+                <option>Hotels</option>
+                <option>Bikes</option>
+            </select>
+        </div>
+        <!--<span class="sec-nav-separator pull-left"> &bull; </span>-->
+        <div class="pull-left sec-nav-city">
+            <div class="sec-nav-label pull-left">City</div>
+            <select>
+                <option>Mumbai</option>
+                <option>Banglore</option>
+                <option>Chandigarh</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+<div class="container content-container">
+    <div class="main-content">
+        <div class="row clearfix">
+            <div class="user-profile clearfix">
+                <div class="user-pic pull-left"><img class="user-img" src="images/profile.jpg" width="190" height="141"/></div>
+                <div class="user-desc  pull-left">
+                    <h2 class="user-name">Yousaf Yawar</h2>
+                    <p class="user-city">Hyderabad </p>
+                    <p class="user-intro">Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button</p>
+                    <div class="follow"><button class="btn btn-danger" >Un-follow</button></div>
+                </div>
+                <div class="user-stats  pull-left">
+                    <div class="follow"><button class="btn" >Edit your profile</button></div>
+                    <div class="single-stat"><span class="stat-no"> 3245</span> pastes</div>
+                    <div class="single-stat"><a href="#"><span class="stat-no"> 3245</span> following</a></div>
+                    <div class="single-stat"><a href="#"><span class="stat-no"> 3245</span> followers</a></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="user-profile">
+
+                <p class="follow-title"> 2456 Following </p>
+
+                <div class="single-person clearfix">
+                    <a href="#" class="single-person-image pull-left"><img src="images/avatar2.jpg" title="Subhash Naik"></a>
+                    <div class="single-person-info pull-left">
+                        <a class="single-person-name" href="#">Subhash Naik</a> <span>, </span>
+                        <span class="single-person-city">Hyderabad</span>
+                        <p class="single-person-desc">Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button.
+                            Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button.
+                            Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button</p>
+                    </div>
+                    <div class="follow pull-right"><button class="btn btn-danger" >Un-follow</button></div>
+                </div>
+                <div class="single-person clearfix">
+                    <a href="#" class="single-person-image pull-left"><img src="images/avatar2.jpg" title="Subhash Naik"></a>
+                    <div class="single-person-info pull-left">
+                        <a class="single-person-name" href="#">Subhash Naik</a> <span>, </span>
+                        <span class="single-person-city">Hyderabad</span>
+                        <p class="single-person-desc">Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button.
+                            Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button.
+                            Here goes your intro. If you like it, keep it or Edit it by clicking the Edit button</p>
+                    </div>
+                    <div class="follow pull-right"><button class="btn btn-danger" >Un-follow</button></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+<!-- create paste Modal -->
+<div id="createPaste" class="modal-paste modal modal-landing hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h2 class="form-signin-heading">Create Paste</h2>
+    </div>
+    <div class="modal-body">
+        <form class="create-paste form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="selectCategory">Select Category</label>
+                <div class="controls">
+                    <select id="selectCategory">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="fileInput">Upload Image</label>
+                <div class="controls">
+                    <input class="input-file" id="fileInput" type="file">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="basicPasteInfo">Basic Paste Information</label>
+                <div class="controls">
+                    <textarea class="input-xlarge" id="basicPasteInfo" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="pasteDetails">Details</label>
+                <div class="controls">
+                    <textarea class="input-xlarge" id="pasteDetails" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="basicPasteInfo">Share on</label>
+                <div class="controls">
+                    <!--<button class="not-connected-fb">Connect with Facebook</button>
+                    <button class="not-connected-twitter">Connect with Twitter</button>-->
+                    <label class="checkbox inline connected-fb">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> <img src="img/fb.png" width="16px" height="16px"/> Facebook
+                    </label>
+                    <label class="checkbox inline connected-twitter">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2"> <img src="img/twitter.png" width="16px" height="16px"/> Twitter
+                    </label>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-success">Create Paste</button>
+                <button class="btn">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

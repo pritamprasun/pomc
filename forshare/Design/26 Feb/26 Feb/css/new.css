@@ -1,0 +1,11 @@
+.wrapper{
+    width:900px;
+    margin: 0 auto;
+}
+.abc {
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: grey;
+  border-radius: 5px;
+}
